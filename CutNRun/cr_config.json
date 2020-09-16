@@ -1,0 +1,22 @@
+{
+    "fastq_dir"             :   "/data/brooksma/CutNRun/Mouse/FQ",
+    "fastqc"                :   "0.11.8",
+    "trimmo"                :   "0.38",
+    "bowtie"                :   "2-2.3.5.1",
+    "samtools"              :   "1.9",
+    "macs2"                 :   "2.2.5",
+    "picard"                :   "2.20.8",
+    "bedtools"              :   "2.29.0",
+    "deeptools"             :   "3.3.0",
+    "bt2idx"                :   "/data/brooksma/Index/Chimera/Mm38_S288C_Ecoli",
+    "trimmoadapt"           :   "/usr/local/apps/trimmomatic/Trimmomatic-0.39/adapters/TruSeq3-PE-2.fa",
+    "blacklist"             :   "/data/brooksma/Index/Mouse/ENS/v98/mm10-blacklist.v2_mb.bed",
+    "job_all"               :   "--time=24:00:00 --mem=4G  --cpus-per-task=2",
+    "job_trimAlign"         :   "--time=08:00:00 --mem=48G  --cpus-per-task=48 --gres=lscratch:100",
+    "job_rmDup"             :   "--time=04:00:00 --mem=8G  --cpus-per-task=8 --gres=lscratch:100",
+    "job_macs"              :   "--time=04:00:00 --mem=10G  --cpus-per-task=2 --gres=lscratch:100",
+    "job_blklist"           :   "--time=04:00:00 --mem=10G  --cpus-per-task=2 --gres=lscratch:100",
+    "job_bigWig"            :   "--time=04:00:00 --mem=8G  --cpus-per-task=8 --gres=lscratch:100",
+    "job_qcBigWigSum"       :   "--time=04:00:00 --mem=8G  --cpus-per-task=8 --gres=lscratch:100",
+    "job_qcDeepPlots"       :   "--time=04:00:00 --mem=8G  --cpus-per-task=8 --gres=lscratch:100"
+}
